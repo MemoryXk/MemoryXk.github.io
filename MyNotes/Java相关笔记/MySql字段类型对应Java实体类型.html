@@ -1,0 +1,888 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MySql字段类型对应Java实体类型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="连接池.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../GitBook相关.html">
+            
+                <a href="../GitBook相关.html">
+            
+                    
+                    GitBook相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../前端/Echarts相关.html">
+            
+                <a href="../前端/Echarts相关.html">
+            
+                    
+                    Echarts相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Linux相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Linux相关/Centos8安装Docker.html">
+            
+                <a href="../Linux相关/Centos8安装Docker.html">
+            
+                    
+                    Centos8安装Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Java相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="SSM整合.html">
+            
+                <a href="SSM整合.html">
+            
+                    
+                    SSM整合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Spring相关.html">
+            
+                <a href="Spring相关.html">
+            
+                    
+                    Spring相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="SpringMVC相关.html">
+            
+                <a href="SpringMVC相关.html">
+            
+                    
+                    SpringMVC相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="Mybatis相关.html">
+            
+                <a href="Mybatis相关.html">
+            
+                    
+                    Mybatis相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="SpringBoot相关.html">
+            
+                <a href="SpringBoot相关.html">
+            
+                    
+                    SpringBoot相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="RestFul风格.html">
+            
+                <a href="RestFul风格.html">
+            
+                    
+                    ResFul风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="连接池.html">
+            
+                <a href="连接池.html">
+            
+                    
+                    连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.8" data-path="MySql字段类型对应Java实体类型.html">
+            
+                <a href="MySql字段类型对应Java实体类型.html">
+            
+                    
+                    MySql字段类型对应Java实体类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Python相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Python相关笔记/列表和元组.html">
+            
+                <a href="../Python相关笔记/列表和元组.html">
+            
+                    
+                    列表和元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Python相关笔记/字典.html">
+            
+                <a href="../Python相关笔记/字典.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Python相关笔记/字符串相关.html">
+            
+                <a href="../Python相关笔记/字符串相关.html">
+            
+                    
+                    字符串相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Python相关笔记/条件与循环.html">
+            
+                <a href="../Python相关笔记/条件与循环.html">
+            
+                    
+                    条件与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Python相关笔记/正则表达式.html">
+            
+                <a href="../Python相关笔记/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Python相关笔记/类.html">
+            
+                <a href="../Python相关笔记/类.html">
+            
+                    
+                    类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Python相关笔记/Scrapy相关.html">
+            
+                <a href="../Python相关笔记/Scrapy相关.html">
+            
+                    
+                    Scrapy相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Python相关笔记/Flask相关.html">
+            
+                <a href="../Python相关笔记/Flask相关.html">
+            
+                    
+                    Flask相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    大数据相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../大数据组件内容/Hadoop相关.html">
+            
+                <a href="../大数据组件内容/Hadoop相关.html">
+            
+                    
+                    Hadoop相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../大数据组件内容/Spark相关.html">
+            
+                <a href="../大数据组件内容/Spark相关.html">
+            
+                    
+                    Spark相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../大数据组件内容/Spark RDD.html">
+            
+                <a href="../大数据组件内容/Spark RDD.html">
+            
+                    
+                    Spark RDD相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../大数据组件内容/Hive相关.html">
+            
+                <a href="../大数据组件内容/Hive相关.html">
+            
+                    
+                    Hive相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../大数据组件内容/Hbase相关.html">
+            
+                <a href="../大数据组件内容/Hbase相关.html">
+            
+                    
+                    Hbase相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../大数据组件内容/Sqoop相关.html">
+            
+                <a href="../大数据组件内容/Sqoop相关.html">
+            
+                    
+                    Sqoop相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../大数据组件内容/Flume相关.html">
+            
+                <a href="../大数据组件内容/Flume相关.html">
+            
+                    
+                    Flume相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../大数据组件内容/Kafka相关.html">
+            
+                <a href="../大数据组件内容/Kafka相关.html">
+            
+                    
+                    Kafka相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Git相关.html">
+            
+                <a href="../Git相关.html">
+            
+                    
+                    Git相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >MySql字段类型对应Java实体类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mysql&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;java&#x5B9E;&#x4F53;&#x7C7B;&#x578B;">MySql&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;Java&#x5B9E;&#x4F53;&#x7C7B;&#x578B;</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">MySql &#x7C7B;&#x578B;&#x540D;</th>
+<th style="text-align:center">GetColumnClassName &#x8FD4;&#x56DE;&#x503C;</th>
+<th style="text-align:center">&#x8FD4;&#x56DE;&#x7684; Java &#x7C7B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">bit(1) (MySQL-5.0)</td>
+<td style="text-align:center">BIT</td>
+<td style="text-align:center">java.lang.Boolean</td>
+</tr>
+<tr>
+<td style="text-align:center">bit(&#x5927;&#x4E8E;1) (MySQL-5.0)</td>
+<td style="text-align:center">BIT</td>
+<td style="text-align:center">byte[]</td>
+</tr>
+<tr>
+<td style="text-align:center">tinyint</td>
+<td style="text-align:center">TINYINT</td>
+<td style="text-align:center">&#x5982;&#x679C; tinyInt1isBit &#x914D;&#x7F6E;&#x8BBE;&#x7F6E;&#x4E3A; true(&#x9ED8;&#x8BA4;&#x4E3A; true)&#xFF0C;&#x662F;java.lang.Boolean&#xFF0C;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x4E3A; 1&#xFF1B;&#x5426;&#x5219;&#x662F;&#x4E3A; java.lang.Integer</td>
+</tr>
+<tr>
+<td style="text-align:center">bool boolean</td>
+<td style="text-align:center">TINYINT</td>
+<td style="text-align:center">&#x53C2;&#x89C1; TINYINT&#x3002;&#x8FD9;&#x4E9B;&#x662F; TINYINT(1) &#x53E6;&#x4E00;&#x79CD;&#x5199;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:center">smallint(M) [unsigned]</td>
+<td style="text-align:center">SMALLINT [UNSIGNED]</td>
+<td style="text-align:center">java.lang.Integer(&#x4E0D;&#x7BA1;&#x662F;&#x5426;&#x65E0;&#x7B26;)</td>
+</tr>
+<tr>
+<td style="text-align:center">mediumint(M) [unsigned]</td>
+<td style="text-align:center">MEDIUMINT [UNSIGNED]</td>
+<td style="text-align:center">java.lang.Integer</td>
+</tr>
+<tr>
+<td style="text-align:center">int integer(M) [unsigned]</td>
+<td style="text-align:center">INTEGER [UNSIGNED]</td>
+<td style="text-align:center">java.lang.Integer&#xFF1B;&#x65E0;&#x7B26;&#x7684;&#x8BDD;&#x662F; java.lang.Long</td>
+</tr>
+<tr>
+<td style="text-align:center">bigint(M) [unsigned]</td>
+<td style="text-align:center">BIGINT [UNSIGNED]</td>
+<td style="text-align:center">java.lang.Long&#xFF1B;&#x65E0;&#x7B26;&#x7684;&#x8BDD;&#x662F; java.math.BigInteger</td>
+</tr>
+<tr>
+<td style="text-align:center">float(M,D)</td>
+<td style="text-align:center">FLOAT</td>
+<td style="text-align:center">java.lang.Float</td>
+</tr>
+<tr>
+<td style="text-align:center">double(M,B)</td>
+<td style="text-align:center">DOUBLE</td>
+<td style="text-align:center">java.lang.Double</td>
+</tr>
+<tr>
+<td style="text-align:center">decimal(M,D)</td>
+<td style="text-align:center">DECIMAL</td>
+<td style="text-align:center">java.math.BigDecimal</td>
+</tr>
+<tr>
+<td style="text-align:center">date</td>
+<td style="text-align:center">DATE</td>
+<td style="text-align:center">java.sql.Date</td>
+</tr>
+<tr>
+<td style="text-align:center">datetime</td>
+<td style="text-align:center">DATETIME</td>
+<td style="text-align:center">java.sql.Timestamp</td>
+</tr>
+<tr>
+<td style="text-align:center">timestamp(M)</td>
+<td style="text-align:center">TIMESTAMP</td>
+<td style="text-align:center">java.sql.Timestamp</td>
+</tr>
+<tr>
+<td style="text-align:center">time</td>
+<td style="text-align:center">TIME</td>
+<td style="text-align:center">java.sql.Time</td>
+</tr>
+<tr>
+<td style="text-align:center">year(2/4)</td>
+<td style="text-align:center">YEAR</td>
+<td style="text-align:center">&#x5982;&#x679C; yearIsDateType &#x914D;&#x7F6E;&#x8BBE;&#x7F6E;&#x4E3A; false&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x4E3A; java.sql.Short&#xFF1B;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A; true(&#x9ED8;&#x8BA4;&#x4E3A; true)&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x662F; java.sql.Date&#xFF0C;&#x5176;&#x5177;&#x4F53;&#x65F6;&#x95F4;&#x662F;&#x4E3A;&#x4E00;&#x6708;&#x4E00;&#x65E5;&#x96F6;&#x65F6;&#x96F6;&#x5206;</td>
+</tr>
+<tr>
+<td style="text-align:center">char(M)</td>
+<td style="text-align:center">CHAR</td>
+<td style="text-align:center">java.lang.String(&#x9664;&#x975E;&#x8BE5;&#x5217;&#x5B57;&#x7B26;&#x96C6;&#x8BBE;&#x7F6E;&#x4E3A; BINARY&#xFF0C;&#x90A3;&#x6837;&#x8FD4;&#x56DE; byte[])</td>
+</tr>
+<tr>
+<td style="text-align:center">varchar(M) [binary]</td>
+<td style="text-align:center">VARCHAR</td>
+<td style="text-align:center">java.lang.String(&#x9664;&#x975E;&#x8BE5;&#x5217;&#x5B57;&#x7B26;&#x96C6;&#x8BBE;&#x7F6E;&#x4E3A; BINARY&#xFF0C;&#x90A3;&#x6837;&#x8FD4;&#x56DE; byte[])</td>
+</tr>
+<tr>
+<td style="text-align:center">binary(M)</td>
+<td style="text-align:center">BINARY</td>
+<td style="text-align:center">byte[]</td>
+</tr>
+<tr>
+<td style="text-align:center">varbinary(M)</td>
+<td style="text-align:center">VARBINARY</td>
+<td style="text-align:center">byte[]</td>
+</tr>
+<tr>
+<td style="text-align:center">tinyblob</td>
+<td style="text-align:center">TINYBLOB</td>
+<td style="text-align:center">byte[]</td>
+</tr>
+<tr>
+<td style="text-align:center">tinytext</td>
+<td style="text-align:center">VARCHAR</td>
+<td style="text-align:center">java.lang.String</td>
+</tr>
+<tr>
+<td style="text-align:center">blob</td>
+<td style="text-align:center">BLOB</td>
+<td style="text-align:center">byte[]</td>
+</tr>
+<tr>
+<td style="text-align:center">text</td>
+<td style="text-align:center">VARCHAR</td>
+<td style="text-align:center">java.lang.String</td>
+</tr>
+<tr>
+<td style="text-align:center">mediumblob</td>
+<td style="text-align:center">MEDIUMBLOB</td>
+<td style="text-align:center">byte[]</td>
+</tr>
+<tr>
+<td style="text-align:center">mediumtext</td>
+<td style="text-align:center">VARCHAR</td>
+<td style="text-align:center">java.lang.String</td>
+</tr>
+<tr>
+<td style="text-align:center">longblob</td>
+<td style="text-align:center">LONGBLOB</td>
+<td style="text-align:center">byte[]</td>
+</tr>
+<tr>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">VARCHAR</td>
+<td style="text-align:center">java.lang.String</td>
+</tr>
+<tr>
+<td style="text-align:center">enum(&apos;value1&apos;,&apos;value2&apos;,...)</td>
+<td style="text-align:center">CHAR</td>
+<td style="text-align:center">java.lang.String</td>
+</tr>
+<tr>
+<td style="text-align:center">set(&apos;value1&apos;,&apos;value2&apos;,...)</td>
+<td style="text-align:center">CHAR</td>
+<td style="text-align:center">java.lang.String</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="连接池.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 连接池">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MySql字段类型对应Java实体类型","level":"1.5.8","depth":2,"next":{"title":"Python相关","level":"1.6","depth":1,"ref":"","articles":[{"title":"列表和元组","level":"1.6.1","depth":2,"path":"MyNotes/Python相关笔记/列表和元组.md","ref":"MyNotes/Python相关笔记/列表和元组.md","articles":[]},{"title":"字典","level":"1.6.2","depth":2,"path":"MyNotes/Python相关笔记/字典.md","ref":"MyNotes/Python相关笔记/字典.md","articles":[]},{"title":"字符串相关","level":"1.6.3","depth":2,"path":"MyNotes/Python相关笔记/字符串相关.md","ref":"MyNotes/Python相关笔记/字符串相关.md","articles":[]},{"title":"条件与循环","level":"1.6.4","depth":2,"path":"MyNotes/Python相关笔记/条件与循环.md","ref":"MyNotes/Python相关笔记/条件与循环.md","articles":[]},{"title":"正则表达式","level":"1.6.5","depth":2,"path":"MyNotes/Python相关笔记/正则表达式.md","ref":"MyNotes/Python相关笔记/正则表达式.md","articles":[]},{"title":"类","level":"1.6.6","depth":2,"path":"MyNotes/Python相关笔记/类.md","ref":"MyNotes/Python相关笔记/类.md","articles":[]},{"title":"Scrapy相关","level":"1.6.7","depth":2,"path":"MyNotes/Python相关笔记/Scrapy相关.md","ref":"MyNotes/Python相关笔记/Scrapy相关.md","articles":[]},{"title":"Flask相关","level":"1.6.8","depth":2,"path":"MyNotes/Python相关笔记/Flask相关.md","ref":"MyNotes/Python相关笔记/Flask相关.md","articles":[]}]},"previous":{"title":"连接池","level":"1.5.7","depth":2,"path":"MyNotes/Java相关笔记/连接池.md","ref":"MyNotes/Java相关笔记/连接池.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","back-to-top-button","chapter-fold","code","-lunr","-search","search-pro","github","pageview-count","page-toc-button"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/MemoryXk"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MyNotes/Java相关笔记/MySql字段类型对应Java实体类型.md","mtime":"2020-07-22T11:47:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-25T04:20:33.817Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

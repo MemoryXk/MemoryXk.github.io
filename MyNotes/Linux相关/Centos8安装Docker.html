@@ -1,0 +1,1010 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Centos8安装Docker · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../GitBook相关.html">
+            
+                <a href="../GitBook相关.html">
+            
+                    
+                    GitBook相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../前端/Echarts相关.html">
+            
+                <a href="../前端/Echarts相关.html">
+            
+                    
+                    Echarts相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Linux相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="Centos8安装Docker.html">
+            
+                <a href="Centos8安装Docker.html">
+            
+                    
+                    Centos8安装Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Java相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Java相关笔记/SSM整合.html">
+            
+                <a href="../Java相关笔记/SSM整合.html">
+            
+                    
+                    SSM整合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Java相关笔记/Spring相关.html">
+            
+                <a href="../Java相关笔记/Spring相关.html">
+            
+                    
+                    Spring相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Java相关笔记/SpringMVC相关.html">
+            
+                <a href="../Java相关笔记/SpringMVC相关.html">
+            
+                    
+                    SpringMVC相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Java相关笔记/Mybatis相关.html">
+            
+                <a href="../Java相关笔记/Mybatis相关.html">
+            
+                    
+                    Mybatis相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Java相关笔记/SpringBoot相关.html">
+            
+                <a href="../Java相关笔记/SpringBoot相关.html">
+            
+                    
+                    SpringBoot相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../Java相关笔记/RestFul风格.html">
+            
+                <a href="../Java相关笔记/RestFul风格.html">
+            
+                    
+                    ResFul风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../Java相关笔记/连接池.html">
+            
+                <a href="../Java相关笔记/连接池.html">
+            
+                    
+                    连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../Java相关笔记/MySql字段类型对应Java实体类型.html">
+            
+                <a href="../Java相关笔记/MySql字段类型对应Java实体类型.html">
+            
+                    
+                    MySql字段类型对应Java实体类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Python相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Python相关笔记/列表和元组.html">
+            
+                <a href="../Python相关笔记/列表和元组.html">
+            
+                    
+                    列表和元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Python相关笔记/字典.html">
+            
+                <a href="../Python相关笔记/字典.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Python相关笔记/字符串相关.html">
+            
+                <a href="../Python相关笔记/字符串相关.html">
+            
+                    
+                    字符串相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Python相关笔记/条件与循环.html">
+            
+                <a href="../Python相关笔记/条件与循环.html">
+            
+                    
+                    条件与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Python相关笔记/正则表达式.html">
+            
+                <a href="../Python相关笔记/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Python相关笔记/类.html">
+            
+                <a href="../Python相关笔记/类.html">
+            
+                    
+                    类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Python相关笔记/Scrapy相关.html">
+            
+                <a href="../Python相关笔记/Scrapy相关.html">
+            
+                    
+                    Scrapy相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Python相关笔记/Flask相关.html">
+            
+                <a href="../Python相关笔记/Flask相关.html">
+            
+                    
+                    Flask相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    大数据相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../大数据组件内容/Hadoop相关.html">
+            
+                <a href="../大数据组件内容/Hadoop相关.html">
+            
+                    
+                    Hadoop相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../大数据组件内容/Spark相关.html">
+            
+                <a href="../大数据组件内容/Spark相关.html">
+            
+                    
+                    Spark相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../大数据组件内容/Spark RDD.html">
+            
+                <a href="../大数据组件内容/Spark RDD.html">
+            
+                    
+                    Spark RDD相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../大数据组件内容/Hive相关.html">
+            
+                <a href="../大数据组件内容/Hive相关.html">
+            
+                    
+                    Hive相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../大数据组件内容/Hbase相关.html">
+            
+                <a href="../大数据组件内容/Hbase相关.html">
+            
+                    
+                    Hbase相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../大数据组件内容/Sqoop相关.html">
+            
+                <a href="../大数据组件内容/Sqoop相关.html">
+            
+                    
+                    Sqoop相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../大数据组件内容/Flume相关.html">
+            
+                <a href="../大数据组件内容/Flume相关.html">
+            
+                    
+                    Flume相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../大数据组件内容/Kafka相关.html">
+            
+                <a href="../大数据组件内容/Kafka相关.html">
+            
+                    
+                    Kafka相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Git相关.html">
+            
+                <a href="../Git相关.html">
+            
+                    
+                    Git相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Centos8安装Docker</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="centos8&#x5B89;&#x88C5;docker">Centos8&#x5B89;&#x88C5;docker</h2>
+<p>1&#x3001;Docker &#x8981;&#x6C42; CentOS &#x7CFB;&#x7EDF;&#x7684;&#x5185;&#x6838;&#x7248;&#x672C;&#x9AD8;&#x4E8E; 3.10 &#xFF0C;&#x67E5;&#x770B;&#x672C;&#x9875;&#x9762;&#x7684;&#x524D;&#x63D0;&#x6761;&#x4EF6;&#x6765;&#x9A8C;&#x8BC1;&#x4F60;&#x7684;CentOS &#x7248;&#x672C;&#x662F;&#x5426;&#x652F;&#x6301; Docker &#x3002;</p>
+<p> &#x901A;&#x8FC7; <strong>uname -r</strong> &#x547D;&#x4EE4;&#x67E5;&#x770B;&#x4F60;&#x5F53;&#x524D;&#x7684;&#x5185;&#x6838;&#x7248;&#x672C;</p>
+<pre><code class="lang-bash">[root@epg-0001 ~]<span class="hljs-comment"># uname -r</span>
+4.18.0-80.el8.x86_64
+</code></pre>
+<p>2&#x3001;&#x4F7F;&#x7528; <code>root</code> &#x6743;&#x9650;&#x767B;&#x5F55; Centos&#x3002;&#x786E;&#x4FDD; yum &#x5305;&#x66F4;&#x65B0;&#x5230;&#x6700;&#x65B0;&#x3002;</p>
+<pre><code class="lang-bash">[root@epg-0001 ~]<span class="hljs-comment"># yum update</span>
+Repository AppStream is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository BaseOS is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository extras is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository PowerTools is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository centosplus is listed more than once <span class="hljs-keyword">in</span> the configuration
+Last metadata expiration check: 0:09:18 ago on Fri 25 Dec 2020 09:04:58 PM CST.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[root@epg-0001 ~]<span class="hljs-comment">#</span>
+</code></pre>
+<p>3&#x3001;&#x5378;&#x8F7D;&#x65E7;&#x7248;&#x672C;&#xFF08;&#x5982;&#x679C;&#x5B89;&#x88C5;&#x8FC7;&#x65E7;&#x7248;&#x672C;&#x7684;&#x8BDD;&#xFF09;</p>
+<pre><code class="lang-bash">[root@epg-0001 ~]<span class="hljs-comment"># yum remove docker  docker-common docker-selinux docker-engine</span>
+</code></pre>
+<p>4&#x3001;&#x5B89;&#x88C5;&#x9700;&#x8981;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#xFF0C; yum-util &#x63D0;&#x4F9B;yum-config-manager&#x529F;&#x80FD;&#xFF0C;&#x53E6;&#x5916;&#x4E24;&#x4E2A;&#x662F;devicemapper&#x9A71;&#x52A8;&#x4F9D;&#x8D56;&#x7684;</p>
+<pre><code class="lang-bash">[root@epg-0001 ~]<span class="hljs-comment"># yum install -y yum-utils device-mapper-persistent-data lvm2</span>
+</code></pre>
+<p>5&#x3001;&#x8BBE;&#x7F6E;yum&#x6E90;</p>
+<p>&#x26A0;&#xFE0F;&#xFF1A;&#x56FD;&#x5916;&#x955C;&#x50CF;&#x4E00;&#x822C;&#x5F88;&#x96BE;&#x8BBF;&#x95EE;&#xFF0C;&#x5EFA;&#x8BAE;&#x914D;&#x7F6E;&#x963F;&#x91CC;&#x4E91;&#x955C;&#x50CF;&#x3002;</p>
+<p>yum-config-manager --add-repo <a href="http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo" target="_blank">http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</a></p>
+<pre><code class="lang-bash">[root@epg-0001 ~]<span class="hljs-comment"># yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</span>
+Repository AppStream is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository BaseOS is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository extras is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository PowerTools is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository centosplus is listed more than once <span class="hljs-keyword">in</span> the configuration
+Adding repo from: https://download.docker.com/linux/centos/docker-ce.repo
+[root@epg-0001 ~]<span class="hljs-comment">#</span>
+</code></pre>
+<p>6&#x3001;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6240;&#x6709;&#x4ED3;&#x5E93;&#x4E2D;&#x6240;&#x6709;docker&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x9009;&#x62E9;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x5B89;&#x88C5;</p>
+<pre><code class="lang-bash">[root@epg-0001 ~]<span class="hljs-comment"># yum list docker-ce --showduplicates | sort -r</span>
+Repository AppStream is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository BaseOS is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository extras is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository PowerTools is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository centosplus is listed more than once <span class="hljs-keyword">in</span> the configuration
+Last metadata expiration check: 0:00:02 ago on Fri 25 Dec 2020 09:20:58 PM CST.
+docker-ce.x86_64                3:20.10.1-3.el8                 docker-ce-stable
+docker-ce.x86_64                3:20.10.0-3.el8                 docker-ce-stable
+docker-ce.x86_64                3:19.03.14-3.el8                docker-ce-stable
+docker-ce.x86_64                3:19.03.13-3.el8                docker-ce-stable
+Docker CE Stable - x86_64                       887  B/s | 7.1 kB     00:08    
+Available Packages
+[root@epg-0001 ~]<span class="hljs-comment">#</span>
+</code></pre>
+<p>7&#x3001;&#x5B89;&#x88C5;docker</p>
+<pre><code class="lang-bash">[root@epg-0001 ~]<span class="hljs-comment"># yum install docker-ce</span>
+Repository AppStream is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository BaseOS is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository extras is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository PowerTools is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository centosplus is listed more than once <span class="hljs-keyword">in</span> the configuration
+Docker CE Stable - x86_64                                                                  107 kB/s |  28 kB     00:00    
+Error: 
+ Problem: package docker-ce-3:20.10.1-3.el7.x86_64 requires containerd.io &gt;= 1.4.1, but none of the providers can be installed
+  - cannot install the best candidate <span class="hljs-keyword">for</span> the job
+  - package containerd.io-1.4.3-3.1.el7.x86_64 is filtered out by modular filtering
+(try to add <span class="hljs-string">&apos;--skip-broken&apos;</span> to skip uninstallable packages or <span class="hljs-string">&apos;--nobest&apos;</span> to use not only best candidate packages)
+[root@epg-0001 ~]<span class="hljs-comment">#</span>
+</code></pre>
+<p>&#x26A0;&#xFE0F;&#xFF1A;&#x5B89;&#x88C5; docker-ce &#x62A5;&#x9519;&#xFF1A;</p>
+<pre><code>Error:  Problem: package docker-ce-3:20.10.1-3.el7.x86_64 requires containerd.io &gt;= 1.4.1, but none of the providers can be installed
+</code></pre><p>&#x4E8E;&#x662F;&#x5B89;&#x88C5;containerd.io &#xFF1A;</p>
+<pre><code class="lang-bash">yum install https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.3-3.1.el8.x86_64.rpm
+</code></pre>
+<p>&#x26A0;&#xFE0F;&#xFF1A;&#x5982;&#x679C;&#x51FA;&#x73B0; podman &#x51B2;&#x7A81;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5927;&#x81F4;&#x9519;&#x8BEF;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-bash">[root@epg-0003 ~]<span class="hljs-comment"># yum install https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.3-3.1.el8.x86_64.rpm</span>
+Repository AppStream is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository BaseOS is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository extras is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository PowerTools is listed more than once <span class="hljs-keyword">in</span> the configuration
+Repository centosplus is listed more than once <span class="hljs-keyword">in</span> the configuration
+Last metadata expiration check: 0:00:25 ago on Sun 27 Dec 2020 01:15:16 AM CST.
+containerd.io-1.4.3-3.1.el8.x86_64.rpm                                                                          1.1 MB/s |  33 MB     00:30    
+Error: 
+ Problem: problem with installed package podman-1.6.4-10.module_el8.2.0+305+5e198a41.x86_64
+  - package podman-1.6.4-10.module_el8.2.0+305+5e198a41.x86_64 requires runc &gt;= 1.0.0-57, but none of the providers can be installed
+  - package containerd.io-1.4.3-3.1.el8.x86_64 conflicts with runc provided by runc-1.0.0-65.rc10.module_el8.2.0+305+5e198a41.x86_64
+  - package containerd.io-1.4.3-3.1.el8.x86_64 obsoletes runc provided by runc-1.0.0-65.rc10.module_el8.2.0+305+5e198a41.x86_64
+  - conflicting requests
+  - package runc-1.0.0-64.rc10.module_el8.2.0+304+65a3c2ac.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.10-3.2.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.13-3.1.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.13-3.2.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.2-3.3.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.2-3.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.4-3.1.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.5-3.1.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.2.6-3.3.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.3.7-3.1.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.3.9-3.1.el7.x86_64 is filtered out by modular filtering
+  - package containerd.io-1.4.3-3.1.el7.x86_64 is filtered out by modular filtering
+(try to add <span class="hljs-string">&apos;--allowerasing&apos;</span> to <span class="hljs-built_in">command</span> line to replace conflicting packages or <span class="hljs-string">&apos;--skip-broken&apos;</span> to skip uninstallable packages or <span class="hljs-string">&apos;--nobest&apos;</span> to use not only best candidate packages)
+</code></pre>
+<p>&#x5219;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x89E3;&#x51B3; podmon &#x51B2;&#x7A81;&#xFF1A;</p>
+<pre><code>[root@epg-0003 ~]# yum erase podman buildah
+</code></pre><p>&#x7136;&#x540E;&#x91CD;&#x65B0;&#x5B89;&#x88C5; docker&#xFF1A;</p>
+<pre><code class="lang-bash">yum install docker-ce      <span class="hljs-comment">#&#x7531;&#x4E8E;repo&#x4E2D;&#x9ED8;&#x8BA4;&#x53EA;&#x5F00;&#x542F;stable&#x4ED3;&#x5E93;&#xFF0C;&#x6545;&#x8FD9;&#x91CC;&#x5B89;&#x88C5;&#x7684;&#x662F;&#x6700;&#x65B0;&#x7A33;&#x5B9A;&#x7248;</span>
+yum install &lt;FQPN&gt;         <span class="hljs-comment"># &#x4F8B;&#x5982;&#xFF1A; yum install docker-ce-3:20.10.1-3.el8</span>
+</code></pre>
+<p>8&#x3001;&#x542F;&#x52A8;&#x5E76;&#x52A0;&#x5165;&#x5F00;&#x673A;&#x542F;&#x52A8;</p>
+<pre><code class="lang-bash">systemctl start docker
+systemctl <span class="hljs-built_in">enable</span> docker
+</code></pre>
+<p>9&#x3001;&#x9A8C;&#x8BC1;&#x5B89;&#x88C5;&#x662F;&#x5426;&#x6210;&#x529F;&#xFF08;&#x6709;client&#x548C;service&#x4E24;&#x90E8;&#x5206;&#x8868;&#x793A;docker&#x5B89;&#x88C5;&#x542F;&#x52A8;&#x90FD;&#x6210;&#x529F;&#x4E86;&#xFF09;</p>
+<pre><code class="lang-bash">[root@epg-0001 ~]<span class="hljs-comment"># docker version</span>
+Client: Docker Engine - Community
+ Version:           20.10.1
+ API version:       1.41
+ Go version:        go1.13.15
+ Git commit:        831ebea
+ Built:             Tue Dec 15 04:37:17 2020
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      <span class="hljs-literal">true</span>
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.1
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.13.15
+  Git commit:       f001486
+  Built:            Tue Dec 15 04:35:42 2020
+  OS/Arch:          linux/amd64
+  Experimental:     <span class="hljs-literal">false</span>
+ containerd:
+  Version:          1.4.3
+  GitCommit:        269548fa27e0089a8b8278<span class="hljs-built_in">fc</span>4<span class="hljs-built_in">fc</span>781d7f65a939b
+ runc:
+  Version:          1.0.0-rc92
+  GitCommit:        ff819c7e9184c13b7c2607fe6c30ae19403a7aff
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[root@epg-0001 ~]<span class="hljs-comment">#</span>
+</code></pre>
+<h3 id="&#x786E;&#x4FDD;&#x7F51;&#x7EDC;&#x6A21;&#x5757;&#x5F00;&#x673A;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;">&#x786E;&#x4FDD;&#x7F51;&#x7EDC;&#x6A21;&#x5757;&#x5F00;&#x673A;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;</h3>
+<pre><code class="lang-bash">[root@ecs-2aae ~]<span class="hljs-comment"># lsmod |grep overlay</span>
+overlay               126976  10
+[root@ecs-2aae ~]<span class="hljs-comment"># lsmod | grep br_netfilter</span>
+br_netfilter           24576  0
+bridge                188416  1 br_netfilter
+[root@ecs-2aae ~]<span class="hljs-comment"># </span>
+
+
+<span class="hljs-comment">####################################################</span>
+<span class="hljs-comment"># &#x5982;&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x65E0;&#x8FD4;&#x56DE;&#x503C;&#x8F93;&#x51FA;&#x6216;&#x63D0;&#x793A;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x9700;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;</span>
+cat &gt; /etc/modules-load.d/docker.conf &lt;&lt;EOF
+overlay
+br_netfilter
+EOF
+modprobe overlay
+modprobe br_netfilter
+</code></pre>
+<h3 id="&#x4F7F;&#x6865;&#x63A5;&#x6D41;&#x91CF;&#x5BF9;-iptables-&#x53EF;&#x89C1;">&#x4F7F;&#x6865;&#x63A5;&#x6D41;&#x91CF;&#x5BF9; iptables &#x53EF;&#x89C1;</h3>
+<pre><code class="lang-bash">cat &gt; /etc/sysctl.d/k8s.conf &lt;&lt;EOF
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+sysctl --system
+
+<span class="hljs-comment">## &#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x751F;&#x6548;&#xFF0C; &#x5982;&#x5747;&#x8FD4;&#x56DE; 1 &#x5373;&#x6B63;&#x786E;</span>
+sysctl -n net.bridge.bridge-nf-call-iptables
+sysctl -n net.bridge.bridge-nf-call-ip6tables
+</code></pre>
+<h3 id="&#x914D;&#x7F6E;-docker">&#x914D;&#x7F6E; docker</h3>
+<pre><code class="lang-bash">mkdir /etc/docker
+<span class="hljs-comment">#&#x4FEE;&#x6539;cgroup&#x9A71;&#x52A8;&#x4E3A;systemd[k8s&#x5B98;&#x65B9;&#x63A8;&#x8350;]&#x3001;&#x9650;&#x5236;&#x5BB9;&#x5668;&#x65E5;&#x5FD7;&#x91CF;&#x3001;&#x4FEE;&#x6539;&#x5B58;&#x50A8;&#x7C7B;&#x578B;&#xFF0C;&#x6700;&#x540E;&#x7684;docker&#x5BB6;&#x76EE;&#x5F55;&#x53EF;&#x4FEE;&#x6539;</span>
+cat &gt; /etc/docker/daemon.json &lt;&lt;EOF
+{
+  // &#x914D;&#x7F6E;&#x4ED3;&#x5E93;&#x955C;&#x50CF;&#x5730;&#x5740;
+  <span class="hljs-string">&quot;registry-mirrors&quot;</span>: [
+     <span class="hljs-string">&quot;https://7uuu3esz.mirror.aliyuncs.com&quot;</span>
+  ],
+  // &#x9ED8;&#x8BA4;http&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#xFF0C;&#x8BBE;&#x7F6E;&#x540E;&#x624D;&#x53EF;&#x4EE5;
+  <span class="hljs-string">&quot;insecure-registries&quot;</span>: [
+     <span class="hljs-string">&quot;http://192.168.1.61&quot;</span>
+  ],
+  // &#x5F00;&#x542F;docker-API&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;
+  <span class="hljs-string">&quot;hosts&quot;</span>: [
+     <span class="hljs-string">&quot;tcp://0.0.0.0:2375&quot;</span>,
+     <span class="hljs-string">&quot;unix:///var/run/docker.sock&quot;</span>
+  ]
+}
+EOF
+<span class="hljs-comment"># &#x91CD;&#x542F; docker &#x751F;&#x6548;</span>
+systemctl daemon-reload
+systemctl restart docker
+</code></pre>
+<h3 id="&#x9A8C;&#x8BC1;-docker-&#x662F;&#x5426;&#x6B63;&#x5E38;">&#x9A8C;&#x8BC1; docker &#x662F;&#x5426;&#x6B63;&#x5E38;</h3>
+<pre><code class="lang-bash"><span class="hljs-comment">#&#x67E5;&#x770B;docker&#x4FE1;&#x606F;&#xFF0C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E0E;&#x914D;&#x7F6E;&#x4E00;&#x81F4;</span>
+[root@ecs-2aae ~]<span class="hljs-comment"># docker info</span>
+Client:
+ Context:    default
+ Debug Mode: <span class="hljs-literal">false</span>
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Build with BuildKit (Docker Inc., v0.5.0-docker)
+
+Server:
+ Containers: 10
+  Running: 10
+  Paused: 0
+  Stopped: 0
+ Images: 9
+ Server Version: 20.10.1
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_<span class="hljs-built_in">type</span>: <span class="hljs-literal">true</span>
+  Native Overlay Diff: <span class="hljs-literal">true</span>
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: <span class="hljs-built_in">local</span>
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file <span class="hljs-built_in">local</span> logentries splunk syslog
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 269548fa27e0089a8b8278<span class="hljs-built_in">fc</span>4<span class="hljs-built_in">fc</span>781d7f65a939b
+ runc version: ff819c7e9184c13b7c2607fe6c30ae19403a7aff
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: default
+ Kernel Version: 4.18.0-80.el8.x86_64
+ Operating System: CentOS Linux 8 (Core)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 4
+ Total Memory: 7.6GiB
+ Name: ecs-2aae
+ ID: TUMK:ZAXS:B73T:5BN5:G6AI:ON26:VQG6:NZOZ:RBE6:BVTX:LGEM:6PJO
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: <span class="hljs-literal">false</span>
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: <span class="hljs-literal">false</span>
+ Insecure Registries:
+  127.0.0.0/8
+ Registry Mirrors:
+  https://registry.docker-cn.com/
+  https://gj9l74ds.mirror.aliyuncs.com/
+  http://hub-mirror.c.163.com/
+ Live Restore Enabled: <span class="hljs-literal">false</span>
+
+WARNING: API is accessible on http://192.168.1.61:2375 without encryption.
+         Access to the remote API is equivalent to root access on the host. Refer
+         to the <span class="hljs-string">&apos;Docker daemon attack surface&apos;</span> section <span class="hljs-keyword">in</span> the documentation <span class="hljs-keyword">for</span>
+         more information: https://docs.docker.com/engine/security/security/<span class="hljs-comment">#docker-daemon-attack-surface</span>
+WARNING: No blkio weight support
+WARNING: No blkio weight_device support
+[root@ecs-2aae ~]<span class="hljs-comment">#</span>
+</code></pre>
+<h3 id="&#x4FEE;&#x6539;docker-&#x9ED8;&#x8BA4;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;">&#x4FEE;&#x6539;docker &#x9ED8;&#x8BA4;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;</h3>
+<p>&#x3010;docker &#x5B89;&#x88C5;&#x540E;&#x7684;&#x9ED8;&#x8BA4;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#x662F; /var/lib/docker &#xFF08;&#x67E5;&#x770B;&#x4E0A;&#x9762;&#x7684; Docker Root Dir &#x5C5E;&#x6027;&#xFF09;&#xFF0C;&#x8FD9;&#x91CC;&#x5B58;&#x50A8;&#x7740;&#x955C;&#x50CF;&#x3001;&#x5BB9;&#x5668;&#x7B49;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x3002;&#x3011;</p>
+<p>1&#x3001;&#x521B;&#x5EFA;docker&#x65B0;&#x7684;&#x9ED8;&#x8BA4;&#x76EE;&#x5F55;</p>
+<pre><code>mkdir -p /home/docker
+</code></pre><p>2&#x3001;&#x4FEE;&#x6539;docker&#x7684;systemd&#x7684; docker.service&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<p>&#x4E0D;&#x77E5;&#x9053; &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;&#x54EA;&#x91CC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;systemd &#x547D;&#x4EE4;&#x663E;&#x793A;&#x4E00;&#x4E0B;.</p>
+<pre><code class="lang-bash">systemctl <span class="hljs-built_in">disable</span> docker
+systemctl <span class="hljs-built_in">enable</span> docker
+<span class="hljs-comment"># &#x663E;&#x793A;&#x7ED3;&#x679C;</span>
+Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
+</code></pre>
+<p>3&#x3001;&#x4FEE;&#x6539; <strong>docker.service</strong> &#x6587;&#x4EF6;</p>
+<pre><code>vim /usr/lib/systemd/system/docker.service
+# &#x5728;&#x91CC;&#x9762;&#x7684;EXECStart&#x7684;&#x540E;&#x9762;&#x589E;&#x52A0;&#x540E;&#x5982;&#x4E0B;: 
+ExecStart=/usr/bin/dockerd --graph /home/docker
+</code></pre><p>4&#x3001;&#x7136;&#x540E;&#x91CD;&#x542F; docker</p>
+<pre><code class="lang-bash">systecmtl daemon-reload
+systemctl restart docker
+</code></pre>
+<h3 id="&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x5230;docker&#x7EC4;">&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x5230;docker&#x7EC4;</h3>
+<p>&#x975E;root&#x7528;&#x6237;&#xFF0C;&#x65E0;&#x9700;sudo&#x5373;&#x53EF;&#x4F7F;&#x7528;docker&#x547D;&#x4EE4;</p>
+<pre><code class="lang-bash"><span class="hljs-comment">#&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x5230;docker&#x7EC4;</span>
+usermod <span class="hljs-_">-a</span>G docker &lt;USERNAME&gt;
+<span class="hljs-comment">#&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#x7ACB;&#x5373;&#x66F4;&#x65B0;docker&#x7EC4;</span>
+newgrp docker
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Centos8安装Docker","level":"1.4.1","depth":2,"next":{"title":"Java相关","level":"1.5","depth":1,"ref":"","articles":[{"title":"SSM整合","level":"1.5.1","depth":2,"path":"MyNotes/Java相关笔记/SSM整合.md","ref":"MyNotes/Java相关笔记/SSM整合.md","articles":[]},{"title":"Spring相关","level":"1.5.2","depth":2,"path":"MyNotes/Java相关笔记/Spring相关.md","ref":"MyNotes/Java相关笔记/Spring相关.md","articles":[]},{"title":"SpringMVC相关","level":"1.5.3","depth":2,"path":"MyNotes/Java相关笔记/SpringMVC相关.md","ref":"MyNotes/Java相关笔记/SpringMVC相关.md","articles":[]},{"title":"Mybatis相关","level":"1.5.4","depth":2,"path":"MyNotes/Java相关笔记/Mybatis相关.md","ref":"MyNotes/Java相关笔记/Mybatis相关.md","articles":[]},{"title":"SpringBoot相关","level":"1.5.5","depth":2,"path":"MyNotes/Java相关笔记/SpringBoot相关.md","ref":"MyNotes/Java相关笔记/SpringBoot相关.md","articles":[]},{"title":"ResFul风格","level":"1.5.6","depth":2,"path":"MyNotes/Java相关笔记/RestFul风格.md","ref":"MyNotes/Java相关笔记/RestFul风格.md","articles":[]},{"title":"连接池","level":"1.5.7","depth":2,"path":"MyNotes/Java相关笔记/连接池.md","ref":"MyNotes/Java相关笔记/连接池.md","articles":[]},{"title":"MySql字段类型对应Java实体类型","level":"1.5.8","depth":2,"path":"MyNotes/Java相关笔记/MySql字段类型对应Java实体类型.md","ref":"MyNotes/Java相关笔记/MySql字段类型对应Java实体类型.md","articles":[]}]},"previous":{"title":"Linux相关","level":"1.4","depth":1,"ref":"","articles":[{"title":"Centos8安装Docker","level":"1.4.1","depth":2,"path":"MyNotes/Linux相关/Centos8安装Docker.md","ref":"MyNotes/Linux相关/Centos8安装Docker.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","back-to-top-button","chapter-fold","code","-lunr","-search","search-pro","github","pageview-count","page-toc-button"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/MemoryXk"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MyNotes/Linux相关/Centos8安装Docker.md","mtime":"2021-01-23T10:06:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-25T04:20:33.817Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

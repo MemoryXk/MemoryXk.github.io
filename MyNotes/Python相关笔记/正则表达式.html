@@ -1,0 +1,835 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>正则表达式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="类.html" />
+    
+    
+    <link rel="prev" href="条件与循环.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../GitBook相关.html">
+            
+                <a href="../GitBook相关.html">
+            
+                    
+                    GitBook相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../前端/Echarts相关.html">
+            
+                <a href="../前端/Echarts相关.html">
+            
+                    
+                    Echarts相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Linux相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Linux相关/Centos8安装Docker.html">
+            
+                <a href="../Linux相关/Centos8安装Docker.html">
+            
+                    
+                    Centos8安装Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Java相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Java相关笔记/SSM整合.html">
+            
+                <a href="../Java相关笔记/SSM整合.html">
+            
+                    
+                    SSM整合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Java相关笔记/Spring相关.html">
+            
+                <a href="../Java相关笔记/Spring相关.html">
+            
+                    
+                    Spring相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Java相关笔记/SpringMVC相关.html">
+            
+                <a href="../Java相关笔记/SpringMVC相关.html">
+            
+                    
+                    SpringMVC相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Java相关笔记/Mybatis相关.html">
+            
+                <a href="../Java相关笔记/Mybatis相关.html">
+            
+                    
+                    Mybatis相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Java相关笔记/SpringBoot相关.html">
+            
+                <a href="../Java相关笔记/SpringBoot相关.html">
+            
+                    
+                    SpringBoot相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../Java相关笔记/RestFul风格.html">
+            
+                <a href="../Java相关笔记/RestFul风格.html">
+            
+                    
+                    ResFul风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../Java相关笔记/连接池.html">
+            
+                <a href="../Java相关笔记/连接池.html">
+            
+                    
+                    连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../Java相关笔记/MySql字段类型对应Java实体类型.html">
+            
+                <a href="../Java相关笔记/MySql字段类型对应Java实体类型.html">
+            
+                    
+                    MySql字段类型对应Java实体类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Python相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="列表和元组.html">
+            
+                <a href="列表和元组.html">
+            
+                    
+                    列表和元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="字典.html">
+            
+                <a href="字典.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="字符串相关.html">
+            
+                <a href="字符串相关.html">
+            
+                    
+                    字符串相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="条件与循环.html">
+            
+                <a href="条件与循环.html">
+            
+                    
+                    条件与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.5" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="类.html">
+            
+                <a href="类.html">
+            
+                    
+                    类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="Scrapy相关.html">
+            
+                <a href="Scrapy相关.html">
+            
+                    
+                    Scrapy相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="Flask相关.html">
+            
+                <a href="Flask相关.html">
+            
+                    
+                    Flask相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    大数据相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../大数据组件内容/Hadoop相关.html">
+            
+                <a href="../大数据组件内容/Hadoop相关.html">
+            
+                    
+                    Hadoop相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../大数据组件内容/Spark相关.html">
+            
+                <a href="../大数据组件内容/Spark相关.html">
+            
+                    
+                    Spark相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../大数据组件内容/Spark RDD.html">
+            
+                <a href="../大数据组件内容/Spark RDD.html">
+            
+                    
+                    Spark RDD相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../大数据组件内容/Hive相关.html">
+            
+                <a href="../大数据组件内容/Hive相关.html">
+            
+                    
+                    Hive相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../大数据组件内容/Hbase相关.html">
+            
+                <a href="../大数据组件内容/Hbase相关.html">
+            
+                    
+                    Hbase相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../大数据组件内容/Sqoop相关.html">
+            
+                <a href="../大数据组件内容/Sqoop相关.html">
+            
+                    
+                    Sqoop相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../大数据组件内容/Flume相关.html">
+            
+                <a href="../大数据组件内容/Flume相关.html">
+            
+                    
+                    Flume相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../大数据组件内容/Kafka相关.html">
+            
+                <a href="../大数据组件内容/Kafka相关.html">
+            
+                    
+                    Kafka相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Git相关.html">
+            
+                <a href="../Git相关.html">
+            
+                    
+                    Git相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >正则表达式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x8BED;&#x6CD5;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+<th style="text-align:center">&#x5B9E;&#x4F8B;</th>
+<th style="text-align:center">&#x5339;&#x914D;&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">.</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x9664;\n&#x4EE5;&#x5916;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;</td>
+<td style="text-align:center">af.c</td>
+<td style="text-align:center">af[a-z]c</td>
+</tr>
+<tr>
+<td style="text-align:center">^</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F00;&#x5934;</td>
+<td style="text-align:center">^123</td>
+<td style="text-align:center">123fas</td>
+</tr>
+<tr>
+<td style="text-align:center">$</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x672B;&#x5C3E;</td>
+<td style="text-align:center">abc$</td>
+<td style="text-align:center">456abc</td>
+</tr>
+<tr>
+<td style="text-align:center">[]</td>
+<td style="text-align:center">&#x5339;&#x914D;[]&#x4E2D;&#x7684;&#x5B57;&#x7B26;</td>
+<td style="text-align:center">[a-zA-Z0-9]</td>
+<td style="text-align:center">Z</td>
+</tr>
+<tr>
+<td style="text-align:center">[^]</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x9664;[]&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;</td>
+<td style="text-align:center">[^a-zA-Z]</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;0&#x6B21;&#x6216;&#x8005;&#x591A;&#x6B21;</td>
+<td style="text-align:center">r*</td>
+<td style="text-align:center">rrrr</td>
+</tr>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;1&#x6B21;&#x6216;&#x8005;&#x591A;&#x6B21;</td>
+<td style="text-align:center">ta+</td>
+<td style="text-align:center">a</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;0&#x6B21;&#x6216;&#x8005;1&#x6B21;</td>
+<td style="text-align:center">ab?</td>
+<td style="text-align:center">b</td>
+</tr>
+<tr>
+<td style="text-align:center">{n}</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;n&#x6B21;</td>
+<td style="text-align:center">ab{5}</td>
+<td style="text-align:center">abbbbb</td>
+</tr>
+<tr>
+<td style="text-align:center">{ n, m}</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;n-m&#x6B21;</td>
+<td style="text-align:center">ho{1,5}b</td>
+<td style="text-align:center">ho</td>
+</tr>
+<tr>
+<td style="text-align:center">\w</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#x53CA;&#x4E0B;&#x5212;&#x7EBF;</td>
+<td style="text-align:center">hv\w</td>
+<td style="text-align:center">hv_</td>
+</tr>
+<tr>
+<td style="text-align:center">\s</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x4EFB;&#x610F;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E; [\t\n\r\f]</td>
+<td style="text-align:center">qwe\s</td>
+<td style="text-align:center">que</td>
+</tr>
+<tr>
+<td style="text-align:center">\d</td>
+<td style="text-align:center">&#x5339;&#x914D;&#x4EFB;&#x610F;&#x6570;&#x5B57;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E; [0-9]</td>
+<td style="text-align:center">ab\d</td>
+<td style="text-align:center">ab5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1match">1.match</h3>
+<p>&#x200B;    re.match()  &#x7528;&#x4E8E;&#x5339;&#x914D;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x82E5;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x672A;&#x5339;&#x914D;&#x5230;&#x5219;&#x8FD4;&#x56DE;NONE</p>
+<h3 id="2search">2.search</h3>
+<p>&#x200B;    re.search()  &#x53EA;&#x5339;&#x914D;&#x4E00;&#x6B21;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x82E5;&#x540E;&#x9762;&#x8FD8;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x5219;&#x4E0D;&#x5339;&#x914D;</p>
+<h3 id="3findall">3.findall</h3>
+<p>&#x200B;    re.findall() &#x5728;&#x5168;&#x90E8;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x5339;&#x914D;&#x5BF9;&#x5E94;&#x7684;&#x503C;</p>
+<h3 id="4sub">4.sub</h3>
+<p>&#x200B;    re.sub()  &#x7528;&#x6B63;&#x5219;&#x6765;&#x8868;&#x793A;&#x8981;&#x88AB;&#x66FF;&#x6362;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<h3 id="5split">5.split</h3>
+<p>&#x200B;    re.split()  &#x7528;&#x6B63;&#x5219;&#x6765;&#x8868;&#x793A;&#x8981;&#x4EE5;&#x4EC0;&#x4E48;&#x5B57;&#x7B26;&#x4E32;&#x5207;&#x5272;</p>
+<h3 id="6compile">6.compile</h3>
+<p>&#x200B;    re.compile()   &#x4F7F;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8F6C;&#x6362;&#x6210;&#x6B63;&#x5219;&#x5BF9;&#x8C61; </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="条件与循环.html" class="navigation navigation-prev " aria-label="Previous page: 条件与循环">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="类.html" class="navigation navigation-next " aria-label="Next page: 类">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"正则表达式","level":"1.6.5","depth":2,"next":{"title":"类","level":"1.6.6","depth":2,"path":"MyNotes/Python相关笔记/类.md","ref":"MyNotes/Python相关笔记/类.md","articles":[]},"previous":{"title":"条件与循环","level":"1.6.4","depth":2,"path":"MyNotes/Python相关笔记/条件与循环.md","ref":"MyNotes/Python相关笔记/条件与循环.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","back-to-top-button","chapter-fold","code","-lunr","-search","search-pro","github","pageview-count","page-toc-button"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/MemoryXk"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MyNotes/Python相关笔记/正则表达式.md","mtime":"2019-11-10T07:51:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-25T04:20:33.817Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
